@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charest="utf-8">
+  <!--vytvorim si responzivny dizajn-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+ <!--<link rel="stylesheet" type="text/css" href="style.css">-->
+
+  <!--Jquery      -->
+  <script 
+  src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <meta name="description" content="Welcome to my websites.">
+  <!--<link rel='stylesheet' href='style.css'>-->
+  
+   <!--  Z DALSEJ STRANKY    -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="icon" href="img/icon_logo.jpg" type="image/jpg" sizes="16x16">
+
+  <title>VianoËnÈTrhy.sk</title>
+  
+  <style>.parallax {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+     .parallax__layer--base {
+  background: url(vlocky1.png);
+  background-size: 100% 100%;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }   
+   .parallax__layer--back {
+    background: url(vlocky2.png);
+    background-size: 100% 100%;
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+  } 
+    .parallax__layer--down {
+    background: url(vlocky3.png);
+    background-size: 100% 100%;
+    -webkit-transform: translateZ(-2px) scale(3);
+    transform: translateZ(-2px) scale(3);
+  }
+  .parallax__layer--before {
+  background: url(vlocky4.png);
+  background-size: 100% 100%;
+    -webkit-transform: translateZ(-3px) scale(4);
+    transform: translateZ(-3px) scale(4);
+  }
+
+    
+
+   --------------------------------------------- */
+
+  * {
+    margin:0;
+    padding:0;
+  }
+
+  body {
+    background: linear-gradient(rgb(159, 160, 252), rgb(245, 244, 247));;
+    height: 100%;
+    font: 100% / 1.5 Arial, sans-serif;
+    overflow: hidden;
+  }
+
+   /* add some padding to force scrollbars */
+  .parallax__layer {
+    padding: 100vh 0;
+  }
+
+   /* centre the content in the parallax layers */
+  .title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  /*...............font...........*/
+@font-face {
+    font-family: vianocny;
+    src: url(ufonts.com_typoupright-bt.ttf);
+}
+a { font-family: vianocny;
+      font-size: 40px;}   
+  .text { font-family: vianocny;
+      font-size: 35px;}
+  h1  { font-family: vianocny;
+  }   
+   img {
+   border-radius: 8px;}
+   
+   .item {
+    width: 200px;
+    float: left;
+}
+.item img {
+    display: block;
+    width: 100%;
+} 
+</style>
+  </head>
+
+<body>
+         
+      <div class="parallax">
+  
+    <div class="parallax__layer parallax__layer--down"></div>
+    <div class="parallax__layer parallax__layer--back"></div>
+    <div class="parallax__layer parallax__layer--base"></div>
+    <div class="parallax__layer parallax__layer--before"></div>
+    
+    
+ <header class="w3-display-container w3-content" style="max-width:800px">
+  <img class="w3-image" src="img/logo4.jpg" alt="logo tu je" width=100% >
+  
+  
+  <!-- Navbar (placed at the bottom of the header image) -->
+  <ul class="w3-navbar w3-white w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-40px">
+    <li><a href="o_nas"><b>O n·s</b></a></li> 
+    <li><a href="hlavna.html"><b>Ponuky</b></a></li>
+    <li><a href="kontakt.html"><b>Kontakt</b></a></li>
+  </ul>
+</header>
+<!-- Navbar on small screens -->
+<ul class="w3-navbar w3-white w3-hide-large w3-hide-medium">
+  <li><a href="o_nas">O n·s</a></li>
+  <li><a href="hlavna.html">Ponuky</a></li>
+  <li><a href="kontakt.html">Kontakt</a></li>
+</ul>    <br><br> <br> 
+
+
+       <!-- obsah stranky -->
+      <div class="w3-display-container w3-content" style="max-width:700px">  
+    <div class="w3-light-grey w3-padding-xlarge w3-padding-32 w3-margin-top" id="contact" style=" border-radius: 8px">
+   <div class="text w3-center"><h1>NapÌöte n·m</h1></div>
+    <hr>
+      <div class="text w3-center">Ak m·te n·pad, ako vylepöit t˙to str·nku, napÌöte n·m vlastnÈ typy a n·pady...</div>
+    <form action="form.asp" target="_blank">
+      <div class="w3-group">
+        <label>Meno</label>
+        <input class="w3-input w3-border" type="text" required name="Name">
+      </div>
+      <div class="w3-group">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" required name="Email">
+      </div>
+      <div class="w3-group">
+        <label>Spr·va</label>
+        <input class="w3-input w3-border" required name="Message">
+      </div>
+      <button type="submit" class="w3-btn w3-btn-block w3-padding-12 w3-light-blue">Odoslaù</button>
+    </form><br>
+    
+          
+    
+
+
+ 
+
+
+  </body>
+ </html>
+

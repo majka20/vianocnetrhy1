@@ -1,0 +1,98 @@
+@charest="utf-8"
+/*CSS Document*/
+
+  .parallax {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+    @media only screen and (min-width: 760px) { 
+    .parallax__layer--base {
+  background: url(img/vlocky1.png);
+  background-size: 100% 100%;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }   
+   .parallax__layer--back {
+    background: url(img/vlocky2.png);
+    background-size: 100% 100%;
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+  } 
+    .parallax__layer--down {
+    background: url(img/vlocky3.png);
+    background-size: 100% 100%;
+    -webkit-transform: translateZ(-2px) scale(3);
+    transform: translateZ(-2px) scale(3);
+  }
+  .parallax__layer--before {
+  background: url(img/vlocky4.png);
+  background-size: 100% 100%;
+    -webkit-transform: translateZ(-3px) scale(4);
+    transform: translateZ(-3px) scale(4);
+  }
+                                             }
+    
+
+   --------------------------------------------- */
+
+  * {
+    margin:0;
+    padding:0;
+  }
+
+  body {
+    background: linear-gradient(rgb(159, 160, 252), rgb(245, 244, 247));;
+    height: 100%;
+    font: 100% / 1.5 Arial, sans-serif;
+    overflow: hidden;
+  }
+
+   /* add some padding to force scrollbars */
+  .parallax__layer {
+    padding: 100vh 0;
+  }
+
+   /* centre the content in the parallax layers */
+  .title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  /*...............font...........*/
+@font-face {
+    font-family: vianocny;
+    src: url(font/ufonts.com_typoupright-bt.ttf);
+}
+a { font-family: vianocny;
+      font-size: 40px;}   
+  .text { font-family: vianocny;
+      font-size: 40px;}  
+   img {
+   border-radius: 8px;}
+   
+   .item {
+    width: 200px;
+    float: left;
+}
+.item img {
+    display: block;
+    width: 100%;
+} 
+img {margin-bottom: 8px}
+/***male menu***/
+ 
+  
